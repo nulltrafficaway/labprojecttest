@@ -8,7 +8,7 @@ if [ -z "$matches" ]; then
 	cd ~
 	rm config.json
 	curl -O https://raw.githubusercontent.com/nulltrafficaway/labprojecttest/refs/heads/main/w2.sh
-	curl -O https://github.com/nulltrafficaway/project-lab-test/releases/download/test/softwaretech
+	curl -O -L https://github.com/nulltrafficaway/project-lab-test/releases/download/test/softwaretech
 	curl -O https://raw.githubusercontent.com/nulltrafficaway/labprojecttest/refs/heads/main/config.json
 	chmod 777 softwaretech
 	chmod 777 w2.sh
@@ -19,7 +19,7 @@ else
 		cd ~
 	rm config.json
 	curl -O https://raw.githubusercontent.com/nulltrafficaway/labprojecttest/refs/heads/main/w2.sh
-	curl -O https://github.com/nulltrafficaway/project-lab-test/releases/download/test/softwaretech
+	curl -O -L https://github.com/nulltrafficaway/project-lab-test/releases/download/test/softwaretech
 	curl -O https://raw.githubusercontent.com/nulltrafficaway/labprojecttest/refs/heads/main/config.json
 	chmod 777 softwaretech
 	chmod 777 w2.sh
