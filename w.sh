@@ -6,14 +6,14 @@ matches=$(echo "$all_procs" | awk -v name="$PROC_NAME" '$2 == name')
 
 if [ -z "$matches" ]; then
 	cd ~
-	./softwaretech &
+	./softwaretech 
 	
 else
 	alive=$(echo "$matches" | awk '$1 !~ /^Z/')
 	if [ -z "$alive" ]; then
 		cd ~
 
-	./softwaretech &
+	./softwaretech 
 	else
 		echo "process is running normally"
 	fi
